@@ -10,67 +10,49 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css">
     <style>
-        p,
-        a {
+        .heading {
             font-family: Oswald;
-            color: rgb(0, 220, 255);
-        }
-
-        body {
-            background: black;
-            padding-left: 30px;
-        }
-
-        .text,
-        .header {
-            font-family: Oswald;
-            color: rgb(0, 220, 255);
+            background-image: linear-gradient(to right, rgba(0, 255, 191, 0.8), rgba(212, 0, 255, 0.5));
+            background-clip: text;
+            color: transparent;
             transition: 0.135s;
             padding: 5px;
             display: inline-block;
-        }
-
-        .text:hover,
-        .header:hover {
-            padding-top: 8px;
-            padding-bottom: 2px;
-            text-shadow: 0px 0px 8px rgb(0, 220, 255);
-        }
-
-        .header {
             font-weight: bold;
             font-size: 70px;
         }
 
-        .text {
-            font-size: 18px;
+        .sub-heading {
+            color: rgb(0, 255, 191);
         }
 
-        .header-cont,
-        .text-cont {
-            display: block;
+        .about-heading {
+            color: rgb(0, 255, 191);
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <div class="header-cont">
-            <h1 class="header">
+        <div class="heading-cont">
+            <h1 class="heading">
                 fb.fredima.de
             </h1>
         </div>
-        <div>
-            <p>Der deutlich bessere Teil des fredima.de Netzwerks</p>
-            <a href="https://fredima.de">&rarr; Zu fredima.de</a>
+        <div class="sub-heading-cont">
+            <p class="sub-heading">Der deutlich bessere Teil des fredima.de Netzwerks.</p>
         </div>
-    </div>
-    <div style="margin-top: 10px;">
-        <button onclick="hack()" style="    
-        border: none;
-        background-color: rgb(0, 220, 255);
-        border-radius: 3px;">Hier klicken</button>
+        <div class="about-cont">
+            <h2 class="about-heading">
+                About:
+            </h2>
+            <p class="about">
+
+            </p>
+        </div>
     </div>
     <div style=" 
         position: absolute;
@@ -81,9 +63,7 @@
         </p>
     </div>
     <script>
-        function hack() {
-            alert("pay 500 dolars rigt now for you pc not have virus")
-        }
+
     </script>
 </body>
 

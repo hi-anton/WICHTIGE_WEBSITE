@@ -1,0 +1,14 @@
+body {
+  background: black;
+  padding-left: 30px;
+  background-image: linear-gradient(to right, rgb(10, 10, 10), rgba(212, 0, 255, 0.386));
+  height: 2000px;
+  position: relative;
+}
+
+p,
+a,
+h1,
+h2 {
+  font-family: Oswald;
+}
