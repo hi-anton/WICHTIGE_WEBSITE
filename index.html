@@ -2,69 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fb.fredima.de</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/general.css">
-    <style>
-        .heading {
-            font-family: Oswald;
-            background-image: linear-gradient(to right, rgba(0, 255, 191, 0.8), rgba(212, 0, 255, 0.5));
-            background-clip: text;
-            color: transparent;
-            transition: 0.135s;
-            padding: 5px;
-            display: inline-block;
-            font-weight: bold;
-            font-size: 70px;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fb.fredima.de</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/general.css">
+	<style>
+		header {
+			background-color: var(--main-black);
+			color: var(--main-white);
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			height: 50px;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0px 20px 0px 20px;
+			border-radius: 0px 0px 10px 10px;
+		}
 
-        .sub-heading {
-            color: rgb(0, 255, 191);
-        }
+		.headings-cont {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin: 75px 0px 100px 0px;
+		}
 
-        .about-heading {
-            color: rgb(0, 255, 191);
-            margin-top: 40px;
-        }
-    </style>
+		.heading {
+			color: var(--main-black);
+			margin-bottom: 0px;
+			font-size: 125px;
+		}
+
+		.sub-heading {
+			color: var(--main-blue);
+		}
+
+		.content {
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+			gap: 40px;
+		}
+
+		.about,
+		.accessibility,
+		.values {
+			margin: 10px 40px 10px 40px;
+			color: var(--main-blue);
+			display: grid;
+			grid-template-columns: 0.3fr 1.7fr;
+			align-items: center;
+		}
+
+		.about-heading,
+		.accessibility-heading,
+		.values-heading {
+			margin: 20px;
+		}
+
+		.about-text,
+		.accessibility-text,
+		.values-text {
+			color: var(--main-black);
+			line-height: 1.5;
+		}
+
+		.footer {
+			margin-left: 40px;
+			margin-top: 50px;
+			color: var(--main-blue);
+		}
+	</style>
 </head>
 
 <body>
-    <div>
-        <div class="heading-cont">
-            <h1 class="heading">
-                fb.fredima.de
-            </h1>
-        </div>
-        <div class="sub-heading-cont">
-            <p class="sub-heading">Der deutlich bessere Teil des fredima.de Netzwerks.</p>
-        </div>
-        <div class="about-cont">
-            <h2 class="about-heading">
-                About:
-            </h2>
-            <p class="about">
+	<header>
+		<div class="right-section">
+			<p>About me</p>
+		</div>
+		<div class="middle-section">
+			<p>Accessibility</p>
+		</div>
+		<div class="left-section">
+			<p>Values</p>
+		</div>
+	</header>
 
-            </p>
-        </div>
-    </div>
-    <div style=" 
-        position: absolute;
-        bottom: 10px;
-        margin-left: 20px;">
-        <p style="color: rgb(0, 111, 128);">
-            Let's create something gigantic together!
-        </p>
-    </div>
-    <script>
+	<div class="headings-cont">
+		<h1 class="heading">
+			<b>
+				<span style="color: var(--main-blue);">fb.</span>fredima<span style="color: var(--main-blue);">.de</span>
+			</b>
+		</h1>
+		<h3 class="sub-heading">
+			<b>The undoubtedly better part of the fredima.de network.</b>
+		</h3>
+	</div>
 
-    </script>
+	<div class="content">
+		<div class="about">
+			<h2 class="about-heading">About me</h3>
+				<div class="about-text">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque voluptates, sed ad illum quaerat et
+						incidunt, in sapiente mollitia, nesciunt obcaecati. Eos incidunt odio porro numquam provident maxime
+						voluptates
+						dicta laudantium voluptatum autem! Qui veniam adipisci repellendus veritatis dolorum eos voluptatibus
+						mollitia
+						praesentium, unde laborum soluta nesciunt! Molestias corporis quas tempore quisquam nisi cupiditate omnis
+						libero, repellat pariatur ab quam blanditiis exercitationem quod maxime totam vel, qui inventore eos! Quasi
+						nostrum repellat autem dolore, veniam culpa eligendi placeat. Animi, pariatur. Quod tempore asperiores ipsum
+						alias aspernatur, rerum illum perspiciatis esse consequatur iste itaque eligendi, earum mollitia a,
+						voluptates
+						dignissimos.
+					</p>
+				</div>
+		</div>
+		<div class="accessibility">
+			<h2 class="accessibility-heading">Accessibility</h2>
+			<div class="accessibility-text">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad modi repudiandae in nisi, nostrum eos,
+					ipsam consequuntur harum voluptas ut molestiae quasi accusantium eius asperiores at fugit illo corporis
+					voluptatibus aspernatur sed iste quidem! Similique quos pariatur commodi aliquam et, tempora obcaecati
+					delectus amet. Quas, ipsa rerum? Dolore earum officiis at eum et sequi eos ratione, officia quis, tempora
+					autem cum impedit quaerat, id iste amet quibusdam! Sequi sed illo nostrum voluptatibus unde, officiis animi
+					eos! Possimus hic quas magni culpa, recusandae ipsam repudiandae necessitatibus ab vitae, quia nemo ullam.
+					Error perspiciatis alias explicabo autem quam. Ipsam, dolore deleniti?
+				</p>
+			</div>
+		</div>
+		<div class="values">
+			<h2 class="values-heading">Values</h2>
+			<div class="accessibility-text">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis soluta cupiditate aperiam alias veniam a
+					officiis dolorem mollitia inventore incidunt quos, odit voluptas optio placeat temporibus facilis quidem hic
+					vero adipisci veritatis voluptatem, nisi doloremque est. Ipsum, excepturi vero? Sequi, totam dolores culpa
+					dolore iusto ipsum doloremque id aut quae pariatur veniam consequatur voluptas voluptate error dicta rerum sed
+					dolorum dignissimos magnam! Ipsa alias, id adipisci ad sed maxime. Itaque id obcaecati, ducimus laborum vero
+					consequuntur incidunt consectetur atque ea hic quasi quod tempore temporibus repellat est inventore
+					perspiciatis, quidem aperiam doloribus enim dolore similique expedita omnis. Officia, ipsam autem.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p class="footer-text">
+			Let's create something gigantic together!
+		</p>
+	</div>
+	<script>
+
+	</script>
 </body>
 
 </html>
