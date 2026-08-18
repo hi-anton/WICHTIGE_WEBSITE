@@ -1,4 +1,6 @@
 body {
+  min-width: 320px;
+  min-height: 1080px;
   background-color: var(--main-white);
   padding: 0px;
   margin: 0px;

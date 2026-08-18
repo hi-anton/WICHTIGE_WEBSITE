@@ -37,11 +37,12 @@
 		.heading {
 			color: var(--main-black);
 			margin-bottom: 0px;
-			font-size: 125px;
+			font-size: clamp(25px, 10vw, 125px);
 		}
 
 		.sub-heading {
 			color: var(--main-blue);
+			font-size: clamp(12px, 1.8vw, 25px);
 		}
 
 		.content {
@@ -53,17 +54,14 @@
 		.about,
 		.accessibility,
 		.values {
-			margin: 10px 40px 10px 40px;
+			margin: 10px 5vw 10px 5vw;
 			color: var(--main-blue);
-			display: grid;
-			grid-template-columns: 0.3fr 1.7fr;
-			align-items: center;
 		}
 
 		.about-heading,
 		.accessibility-heading,
 		.values-heading {
-			margin: 20px;
+			margin: 0px 0px 20px 10px;
 		}
 
 		.about-text,
