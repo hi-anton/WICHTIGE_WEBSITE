@@ -1,0 +1,57 @@
+.fredima-link {
+  color: var(--main-black);
+  text-decoration: none;
+}
+
+.headings-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 75px 0px 100px 0px;
+}
+
+.heading {
+  color: var(--main-black);
+  margin-bottom: 0px;
+  font-size: clamp(30px, 10vw, 125px);
+}
+
+.sub-heading {
+  color: var(--main-blue);
+  font-size: clamp(12px, 1.8vw, 25px);
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.about,
+.accessibility,
+.values {
+  margin: 10px 5vw 10px 5vw;
+  color: var(--main-blue);
+}
+
+.about-heading,
+.accessibility-heading,
+.values-heading {
+  margin: 0px 0px 20px 10px;
+}
+
+.about-text,
+.accessibility-text,
+.values-text {
+  color: var(--main-black);
+  line-height: 1.5;
+}
+
+.footer {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-blue);
+}
