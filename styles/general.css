@@ -30,3 +30,6 @@ header {
   --main-white: rgb(245, 245, 245);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
